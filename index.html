@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title> Mister Ahmed </title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/solarSystem.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -32,17 +33,28 @@
 <section class="about-me" id="about">
     <div class="about-me-container">
         <div class="about-me-left">
-            blah blah blah
+            <div class="solar-system">
+                <div id="sun"></div>
+
+                <div class="orbit earth-orbit"></div>
+                <div class="earth-spin">
+                    <img id="earth" src="./img/earth.png" alt="earth"/>
+                </div>
+
+                <div class="distance-counter">
+                    <span id="distance-text">I have travelled </span>
+                    <span id="distance-travelled">0</span>
+                    <span id="">around the Sun.</span>
+                </div>
+            </div>
         </div>
         <div class="about-me-right">
-            <h2>About Me</h2>
+            <h2 class="about-me-title">About Me</h2>
             <p class="about-me-summary">I am a creative and innovative developer skilled in programming. Recognized for
                 a
                 results-oriented mindset, I specialize in leveraging technology to address complex challenges and drive
                 business
-                growth. My unwavering commitment to innovation and dedication to excellence consistently enhance
-                projects in
-                dynamic, fast-paced environments.
+                growth.
                 I'm passionate about designing and building applications, bringing imaginative concepts to life!
             </p>
         </div>
@@ -51,5 +63,6 @@
 
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <script src="./js/main.js"></script>
+<script src="./js/earthOrbit.js"></script>
 </body>
 </html>
