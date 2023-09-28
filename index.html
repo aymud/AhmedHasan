@@ -10,14 +10,24 @@
 </head>
 <body>
 <header>
-    <div class="header-content">
+    <nav>
+        <div class="navbar">
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="header-content" id="home">
         <div class="header-text">
             <div class="greeting">hello hey and hi, it's me</div>
             <div class="name">Ahmed Hasan</div>
             <span>i am <span class="typing-text"></span></span>
             <div class="angle-down-icon">
                 <a href="#about">
-                    <span>Learn More</span>
+                    <span>See More</span>
                     <i class="fas fa-angle-down"></i>
                 </a>
             </div>
@@ -49,7 +59,7 @@
             </div>
         </div>
         <div class="about-me-right">
-            <h2 class="about-me-title">About Me</h2>
+            <h2 class="about-me-title">Who Am I?</h2>
             <p class="about-me-summary">I am a creative and innovative developer skilled in programming. Recognized for
                 a
                 results-oriented mindset, I specialize in leveraging technology to address complex challenges and drive
@@ -62,28 +72,41 @@
     </div>
 </section>
 
-<section class="skills-section">
-    <h2>Skills Overview</h2>
+<section class="skills-section" id="skills">
+    <h2>I do Amazing Things</h2>
     <div class="skill-cards">
-        <div class="skill-card fas fa-code">
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fas fa-code"></i>
+            </div>
             <h3>Programming</h3>
-            <p>Java, Python, C++, C#, PHP, Haskell</p>
+            <p>Java, Python, C, C++, C#, PHP, Assembly, Haskell, Prolog</p>
         </div>
         <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fas fa-paint-brush"></i>
+            </div>
             <h3>UI/UX Design</h3>
             <p>Designing interactive and intuitive front-end applications. Prototyping with tools such as Figma and
                 Balsamiq.</p>
         </div>
         <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fas fa-laptop-code"></i>
+            </div>
             <h3>Web Development</h3>
-            <p>HTML/CSS, JavaScript, React, Express, Node, Socket.io, Create, D3, P5</p>
+            <p>HTML/CSS, JavaScript, React, Express, Node, Socket.io, Create, D3, P5, Wordpress</p>
         </div>
         <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fas fa-chart-bar"></i>
+            </div>
             <h3>Analytics</h3>
             <p>SQL, R, Power BI, Tableau, SSRS, Azure cloud services (Databrick, Data Factory, Synapse)</p>
         </div>
     </div>
 </section>
+
 
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <script src="./js/main.js"></script>

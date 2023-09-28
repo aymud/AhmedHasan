@@ -7,11 +7,50 @@
     font-family: 'Poppins', sans-serif;
 }
 
+header nav {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 12;
+}
+
+.navbar {
+    width: 90%;
+    display: flex;
+    margin: 20px auto 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .menu {
+    display: flex;
+}
+
+nav .menu li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+nav .menu a {
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+nav .menu a:hover {
+    color: #000;
+}
+
 .header-content {
     height: 100vh;
     width: 100%;
     background: url("../img/SpaceBackground.png") no-repeat;
-    background-position: center;
+    background-position: top center;
+    margin-top: 0;
+    padding: 260px 0 100px 0;
+    background-size: cover;
 }
 
 .header-text {
@@ -76,7 +115,7 @@
 
 .social-icons a {
     margin-top: 8px;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 500;
     text-decoration: none;
     opacity: 0.7;
@@ -89,9 +128,15 @@
 }
 
 .about-me {
-    background-color: #f0f0f0;
-    padding: 50px 0;
+    background-color: #000;
+    /*padding: 50px 0;*/
     /*background-color: red;*/
+    /*border-radius: 64px;*/
+    /*padding: 60px 50px;*/
+    /*margin-top: -60px;*/
+    /*max-width: 85%;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
 }
 
 .about-me-container {
@@ -128,9 +173,9 @@
 }
 
 .about-me-right h2 {
-    font-size: 24px;
+    font-size: 34px;
     margin-bottom: 20px;
-    color: #333;
+    color: #62bffb;
 }
 
 .about-me-summary {
@@ -144,11 +189,15 @@
 .skills-section {
     text-align: center;
     padding: 40px 0;
+    /*background-color: red;*/
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .skills-section h2 {
     font-size: 24px;
-    color: #333;
+    color: #62bffb;
 }
 
 .skill-cards {
@@ -158,17 +207,30 @@
 }
 
 .skill-card {
-    flex-basis: calc(25% - 20px); /* Adjust width as needed */
-    background-color: #f0f0f0;
+    flex-basis: calc(25% - 20px);
+    background-color: #fff;
     border-radius: 8px;
     padding: 20px;
     margin: 20px 0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.skill-icon {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 15px;
 }
 
 .skill-card h3 {
     font-size: 20px;
     color: #333;
+    margin-top: 0;
 }
 
 .skill-card p {
@@ -176,3 +238,4 @@
     color: #666;
     margin-top: 10px;
 }
+
