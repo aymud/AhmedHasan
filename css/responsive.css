@@ -1,15 +1,25 @@
 @media (max-width: 768px) {
     .navbar {
-        justify-content: center; /* Center-align the navigation items */
+        justify-content: center;
     }
 
-    .menu {
-        /*flex-direction: column; !* Stack menu items vertically on small screens *!*/
-        text-align: center; /* Center-align menu items */
+    nav .menu {
+        text-align: center;
+    }
+
+    nav .menu a:visited {
+        color: white;
     }
 
     .menu li {
-        margin: 10px 0; /* Add spacing between menu items vertically */
+        margin: 10px 0;
+    }
+
+    .header-content {
+        min-width: 100%;
+        background-color: red;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .header-text {
@@ -54,6 +64,10 @@
     .about-me-container {
         flex-direction: column; /* Stack content vertically */
         text-align: center; /* Center-align the content */
+    }
+
+    .about-me {
+        max-width: 100%;
     }
 
     .about-me-left,
