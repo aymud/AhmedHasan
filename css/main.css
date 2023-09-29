@@ -309,6 +309,7 @@ nav .menu a:hover {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     transition: 0.3s ease-in-out;
     border-radius: 15px;
+    align-items: center;
 }
 
 .projects-container .card:hover {
@@ -320,13 +321,13 @@ nav .menu a:hover {
     width: 300px;
     height: 300px;
     top: -30%;
-    left: 35px;
     z-index: 1;
 }
 
 .projects-container .card .image img {
     max-width: 100%;
     border-radius: 15px;
+    max-height: 200px;
 }
 
 .projects-container .card .content {
@@ -367,8 +368,10 @@ nav .menu a:hover {
 
 .card-link {
     text-decoration: none;
-    display: block;
     color: inherit;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 footer {
@@ -392,12 +395,13 @@ footer {
     font-size: 25px;
     list-style: none;
     padding: 0;
-    display: flex; /* Arrange the links horizontally */
-    justify-content: center; /* Center-align the links horizontally */
+    display: flex;
+    justify-content: center;
 }
 
 .connect li {
-    margin-right: 20px; /* Add spacing between social links */
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .connect a {
