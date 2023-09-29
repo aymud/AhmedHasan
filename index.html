@@ -2,13 +2,15 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <title> Mister Ahmed </title>
+    <title>Ahmed</title>
+    <link rel="stylesheet" href="./css/starParallax.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/solarSystem.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<div id="stars"></div>
 <header>
     <nav>
         <div class="navbar">
@@ -16,7 +18,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
             </ul>
         </div>
     </nav>
@@ -37,6 +39,9 @@
     <div class="social-icons">
         <a href="https://github.com/AMax23" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/ahmedhasan01/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:&#097;&#104;&#109;&#101;&#100;&#046;&#104;&#097;&#115;&#097;&#110;&#064;&#097;&#108;&#117;&#109;&#110;&#105;&#046;&#117;&#099;&#097;&#108;&#103;&#097;&#114;&#121;&#046;&#099;&#097;"
+           target="_blank" title="Email"> <i class="fas fa-envelope"></i></a>
+
     </div>
 </header>
 
@@ -60,12 +65,12 @@
         </div>
         <div class="about-me-right">
             <h2 class="about-me-title">Who Am I?</h2>
+            <div class="line"></div>
             <p class="about-me-summary">I am a creative and innovative developer skilled in programming. Recognized for
-                a
-                results-oriented mindset, I specialize in leveraging technology to address complex challenges and drive
-                business
-                growth.
-                I'm passionate about designing and building applications, bringing imaginative concepts to life!
+                a results-oriented mindset, I specialize in leveraging technology to address complex challenges and
+                drive
+                business growth. <br><br>I'm passionate about designing and building applications, bringing imaginative concepts
+                to life!
             </p>
 
         </div>
@@ -73,7 +78,8 @@
 </section>
 
 <section class="skills-section" id="skills">
-    <h2>I do Amazing Things</h2>
+    <h2>Skills Overview</h2>
+    <div class="line"></div>
     <div class="skill-cards">
         <div class="skill-card">
             <div class="skill-icon">
@@ -107,6 +113,46 @@
     </div>
 </section>
 
+
+<div class="project-header">
+    <h2 class="section-heading">I do Amazing Things</h2>
+    <div class="line"></div>
+</div>
+
+<div class=projects-container id="projects">
+
+    <div class=card>
+        <div class=image>
+            <img href="#" src="./img/theButtonProjectThumbnail.png" alt="Project - The Button">
+        </div>
+        <div class=content>
+            <h3>The Delightful Button</h3>
+            <p>A single delightful button that represents my client.</p>
+        </div>
+    </div>
+
+    <div class=card>
+        <div class=image>
+            <img href="#" src=./img/wordlessProjectThumbnail.png alt="Project - Wordless">
+        </div>
+        <div class=content>
+            <h3>Wordless</h3>
+            <p>An interface that uses sound as an input to provide a rich, expressive,
+                and delightful interaction.</p>
+        </div>
+    </div>
+
+    <div class=card>
+        <div class=image>
+            <img href="#" src=./img/theRelationshipProjectThumbnail.png alt="Project - The Relationship">
+        </div>
+        <div class=content>
+            <h3>The Relationship</h3>
+            <p>A technology system that helps facilitate a relationship
+                between an 8-month-old baby and his grandparents.</p>
+        </div>
+    </div>
+</div>
 
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <script src="./js/main.js"></script>

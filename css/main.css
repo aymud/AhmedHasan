@@ -7,6 +7,22 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    background-color: black;
+}
+
 header nav {
     position: fixed;
     width: 100%;
@@ -20,7 +36,8 @@ header nav {
     display: flex;
     margin: 20px auto 0 auto;
     align-items: center;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    justify-content: flex-end;
 }
 
 nav .menu {
@@ -51,6 +68,7 @@ nav .menu a:hover {
     margin-top: 0;
     padding: 260px 0 100px 0;
     background-size: cover;
+    position: relative;
 }
 
 .header-text {
@@ -90,7 +108,7 @@ nav .menu a:hover {
 
 .angle-down-icon a {
     text-decoration: none;
-    color: #333;
+    color: #f0f0f0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,6 +116,16 @@ nav .menu a:hover {
 
 .angle-down-icon a i {
     font-size: 30px;
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
 }
 
 .angle-down-icon a span {
@@ -173,15 +201,17 @@ nav .menu a:hover {
 }
 
 .about-me-right h2 {
-    font-size: 34px;
     margin-bottom: 20px;
     color: #62bffb;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .about-me-summary {
+    padding-top: 50px;
     font-size: 18px;
     line-height: 1.6;
-    color: #666;
+    color: #f0f0f0;
     text-align: center;
 }
 
@@ -193,10 +223,12 @@ nav .menu a:hover {
     max-width: 95%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 100px;
 }
 
 .skills-section h2 {
-    font-size: 24px;
+    font-size: 30px;
+    font-weight: bold;
     color: #62bffb;
 }
 
@@ -239,3 +271,91 @@ nav .menu a:hover {
     margin-top: 10px;
 }
 
+.projects-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.project-header {
+    margin-top: 100px;
+}
+
+.project-header h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #62bffb;
+    margin-bottom: 20px; /* Add spacing between heading and cards */
+    text-align: center;
+}
+
+.projects-container .card {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background-color: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.projects-container .card:hover {
+    height: 300px;
+}
+
+.projects-container .card .image {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -40%;
+    left: 8px;
+    z-index: 1;
+}
+
+.projects-container .card .image img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.projects-container .card .content {
+    position: relative;
+    top: -100px;
+    padding: 10px 15px;
+    color: #111;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.projects-container .card:hover .content {
+    margin-top: 30px;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.line {
+    border-top: 4px solid #62bffb;
+    height: 10px;
+    width: 80px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.project-header .line {
+    margin-top: -10px;
+}
+
+.about-me-right .line {
+    margin-top: -10px;
+}
