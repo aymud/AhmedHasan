@@ -101,6 +101,12 @@ nav .menu a:hover {
     color: #62bffb;
 }
 
+.header-text .intro {
+    font-size: 15px;
+    color: #f0f0f0;
+    margin-top: 10px;
+}
+
 .angle-down-icon {
     text-align: center;
     margin-top: 20px;
