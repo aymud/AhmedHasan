@@ -173,6 +173,7 @@ nav .menu a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    /*background-color: white;*/
 }
 
 .about-me-title {
@@ -184,6 +185,8 @@ nav .menu a:hover {
 .about-me-left {
     flex: 1;
     padding: 20px;
+    /*background-color: magenta;*/
+    margin-bottom: 50px;
 }
 
 .about-me-left img {
@@ -208,7 +211,7 @@ nav .menu a:hover {
 }
 
 .about-me-summary {
-    padding-top: 50px;
+    padding-top: 10px;
     font-size: 18px;
     line-height: 1.6;
     color: #f0f0f0;
@@ -290,13 +293,13 @@ nav .menu a:hover {
     font-size: 30px;
     font-weight: bold;
     color: #62bffb;
-    margin-bottom: 20px; /* Add spacing between heading and cards */
+    margin-bottom: 20px;
     text-align: center;
 }
 
 .projects-container .card {
     position: relative;
-    max-width: 300px;
+    max-width: 400px;
     height: 215px;
     background-color: #fff;
     margin: 30px 10px;
@@ -314,10 +317,10 @@ nav .menu a:hover {
 
 .projects-container .card .image {
     position: relative;
-    width: 260px;
-    height: 260px;
-    top: -40%;
-    left: 8px;
+    width: 300px;
+    height: 300px;
+    top: -30%;
+    left: 35px;
     z-index: 1;
 }
 
