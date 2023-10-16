@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<!-- Based on Bootstrap Album Template-->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Describe this page." />
+  <title>Wordless Project Details</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap 4 Default CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  <!-- Custom Additional CSS -->
+  <link href="../css/projectDetails.css" rel="stylesheet"/>
+
+
+</head>
+<body>
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About Me</h4>
+          <p class="text-muted">
+            Hey! I am a creative and passionate developer who designs and builds applications,
+            bringing imaginative concepts to life!
+            Recognized for a results-oriented mindset, I specialize in leveraging my strong problem-solving
+            skills,
+            deep technical expertise, and a commitment to continuous learning to drive business growth.
+          </p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://www.linkedin.com/in/ahmedhasan01/" target="_blank" class="text-white">LinkedIn</a>
+            </li>
+            <li><!--<a href="#" class="text-white">Facebook</a>--></li>
+            <li><a href="https://github.com/AMax23" target="_blank" class="text-white">GitHub</a></li>
+            <li><a href="mailto:ahmed.hasan@alumni.ucalgary.ca" class="text-white">Email Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand d-flex align-items-center">
+        <strong>Ahmed Hasan</strong>
+      </a>
+      <button class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarHeader"
+              aria-controls="navbarHeader"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Human-Computer Interaction</h1>
+        <h2 class="fw-light">Project Name: Wordless</h2>
+        <button class="projectButton" onclick="window.location.href='https://wordless.netlify.app/'">Live
+          Demo
+        </button>
+        <button class="projectButton"
+                onclick="window.location.href='https://github.com/AMax23/CPSC581-ProjectPortfolio'">Source Code
+        </button>
+        <p></p>
+      </div>
+    </div>
+  </section>
+  <div class="album py-5 bg-light">
+
+    <!-- Visual Summary Start -->
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center carousel-title">Visual Summary</h1>
+          <hr>
+
+        </div>
+      </div>
+
+      <!--Text on right, image on left Start-->
+      <div class="left-image-post">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="left-image">
+              <img src="../img/WordlessProject/projectDescriptionImg.PNG" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="right-text">
+              <h4>Project Description</h4>
+              <p>
+                A mobile web browser game created using web sensors in order to provide a rich interaction with non-verbal audio input.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Text on right, image on left End-->
+      <!--Text on left, image on right Start-->
+      <div class="right-image-post">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="left-text">
+              <!--Manually adding these line breaks cos im too lazy to change the css now..--><br /> <br />
+              <h4>Interaction Design</h4>
+              <p>
+                Playing around with the different sensors and phone constraints to create an interactive game. This
+                led me to design it in such a way so that the user feels engaged and that they have full control.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="right-image">
+              <img height="200" src="../img/WordlessProject/interactionDesign.PNG" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Text on left, image on right End-->
+      <!--Text on right, image on left Start-->
+      <div class="left-image-post">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="left-image">
+              <img src="../img/WordlessProject/designRationale.PNG" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!--Manually adding these line breaks cos im too lazy to change the css now..--><br /> <br />
+            <div class="right-text">
+              <h4>Design Rationale</h4>
+              <p>
+                To add a bit more oomph to the game, I added bombs which would need to be avoided. To take advantage
+                of the sensors and put a more expressive spin on the voice input, I added larger moles
+                which would require the player to make louder noises to whack them.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Text on right, image on left End-->
+      <!--Text on left, image on right Start-->
+      <!--<div class="right-image-post">
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="left-text">
+                      <h4>My Client</h4>
+                      <p>
+                          The topics I focused my interview questions around were: "What brings you delight during COVID"
+                          and "Something in your house that you enjoy interacting with".
+                      </p>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="right-image">
+                      <img src="../images/project 0/client.jpg" alt="" />
+                  </div>
+              </div>
+          </div>
+      </div>-->
+      <!--Text on left, image on right End-->
+    </div>
+    <!-- Visual Summary End -->
+    <!--Slideshow start. Taken from: https://mdbootstrap.com/docs/standard/components/carousel/ -->
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-12">
+
+          <h1 class="text-center carousel-title">Sketches</h1>
+          <hr>
+
+        </div>
+        <!-- End of Col-md-12 -->
+
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+
+          <!--<ol class="carousel-indicators">
+
+              <li data-target="#carouselExample" data-slide-to="0" class="active">
+
+                  <img class="d-block w-100" src="../images/project 0/catLook2.png" alt="First slide">
+
+              </li>
+
+              <li data-target="#carouselExample" data-slide-to="1">
+
+                  <img class="d-block w-100" src="https://fakeimg.pl/800x400/?retina=1&text=Slider 2&font=noto" alt="Second slide">
+
+              </li>
+
+              <li data-target="#carouselExample" data-slide-to="2">
+
+                  <img class="d-block w-100" src="https://fakeimg.pl/800x400/?retina=1&text=Slider 3&font=noto" alt="Third slide">
+
+              </li>
+
+          </ol>-->
+          <!-- Carousel Indicators -->
+
+          <div class="carousel-inner carouselContainer">
+
+            <div class="carousel-item active">
+              <div class="totalImagesNumber">1 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (1).jpg" alt="Sketch 1">
+
+              <div class="carousel-caption">
+
+                <h5>Audio Visualizer</h5>
+
+                <p>Visualize sound in a 3D, colourful way.</p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 1 -->
+
+            <div class="carousel-item">
+              <div class="totalImagesNumber">2 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (2).jpg" alt="Sketch 2s">
+
+              <div class="carousel-caption">
+
+                <h5>Thief Game</h5>
+
+                <p>Thief steals art and then player yells to stop the thief.</p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 1.1 -->
+
+            <div class="carousel-item">
+              <div class="totalImagesNumber">2 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (3).jpg" alt="Sketch 3">
+
+              <div class="carousel-caption">
+
+                <h5>Painting With Voice</h5>
+
+                <p>User controls a paint brush with their voice to paint.</p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 1.2 -->
+
+            <div class="carousel-item">
+              <div class="totalImagesNumber">2 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (4).jpg" alt="Sketch 4">
+
+              <div class="carousel-caption">
+
+                <h5>Jenga</h5>
+
+                <p>You play jenga with your voice to pull out the blocks based on pitch.</p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 2 -->
+
+            <div class="carousel-item">
+              <div class="totalImagesNumber">3 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (5).jpg" alt="Sketch 5">
+
+              <div class="carousel-caption">
+
+                <h5>Back to Basics</h5>
+
+                <p>Brainstorm different sensors to play around with non-verbal audio.</p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 3 -->
+
+            <div class="carousel-item">
+              <div class="totalImagesNumber">2 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (6).jpg" alt="Sketch 6">
+
+              <div class="carousel-caption">
+
+                <h5>Pure Joy</h5>
+
+                <p>An idea where you scream and watch money fall <br />
+                  and see your account balance increase!</p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 3.5 -->
+
+            <div class="carousel-item">
+              <div class="totalImagesNumber">4 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (7).jpg" alt="Sketch 7">
+
+              <div class="carousel-caption">
+
+                <h5>Voice Operation</h5>
+
+                <p>Player operates on someone using voice to control the tools.</p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 4 -->
+
+            <div class="carousel-item">
+              <div class="totalImagesNumber">2 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (8).jpg" alt="Sketch 8">
+
+              <div class="carousel-caption">
+
+                <h5>Picture Painting</h5>
+
+                <p>Either paint or trace a picture by following <br />non-verbal audio commands on the screen.</p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 4.5 -->
+
+            <div class="carousel-item">
+              <div class="totalImagesNumber">5 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (9).jpg" alt="Sketch 9">
+
+              <div class="carousel-caption">
+
+                <h5>Pictionary With Sounds</h5>
+
+                <p>Play with friends where you sound out the word given to you.</p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 5 -->
+
+            <div class="carousel-item">
+              <div class="totalImagesNumber">6 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (10).jpg" alt="Sketch 10">
+
+              <div class="carousel-caption">
+
+                <h5>Levitation</h5>
+
+                <p>Control objects with your voice and move them around.</p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 6 -->
+
+            <div class="carousel-item">
+              <div class="totalImagesNumber">7 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (11).jpg" alt="Sketch 11">
+
+              <div class="carousel-caption">
+
+                <h5>Gaze</h5>
+
+                <p>Use a telescope to star gaze.
+                  <br />More yelling = more stars!</p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 7 -->
+
+            <div class="carousel-item">
+              <div class="totalImagesNumber">8 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (12).jpg" alt="Sketch 12">
+
+              <div class="carousel-caption">
+
+                <h5>Generative Art</h5>
+
+                <p>
+                  Supposed to be an indepth sketch of the painting with voice idea.
+                  <br />Started making this but didn't stick with it.
+                </p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 8 -->
+
+            <div class="carousel-item">
+              <div class="totalImagesNumber">9 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (13).jpg" alt="Sketch 13">
+
+              <div class="carousel-caption">
+
+                <h5>Generative Art II</h5>
+
+                <p>Add a toolbar for the user to change colour and stroke of brush.
+                  <br />Things seemed too easy with this one so I never kept it.</p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 9 -->
+
+            <div class="carousel-item">
+              <div class="totalImagesNumber">10 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (14).jpg" alt="Sketch 14">
+
+              <div class="carousel-caption">
+
+                <h5>Generative Art (Last Try)</h5>
+
+                <p>Add face tracking to help draw.
+                  <br />It was very hard to draw something good.</p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 10 -->
+
+            <div class="carousel-item">
+              <div class="totalImagesNumber">11 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (15).jpg" alt="Sketch 15">
+
+              <div class="carousel-caption">
+
+                <h5>Iteration #1: Whac-A-Mole Game!</h5>
+
+                <p>Remap Whac-A-Mole to work with voice.
+                  <br />Yell to bring out the moles.</p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 11 -->
+
+            <div class="carousel-item">
+              <div class="totalImagesNumber">12 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (16).jpg" alt="Sketch 16">
+
+              <div class="carousel-caption">
+
+                <h5>Iteration #2: Face Tracking</h5>
+
+                <p>Player is able to control the mallet with their camera.</p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 12 -->
+
+            <div class="carousel-item">
+              <div class="totalImagesNumber">13 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (17).jpg" alt="Sketch 17">
+
+              <div class="carousel-caption">
+
+                <h5>Iteration #3: Device Orientation</h5>
+
+                <p>Hammer controlled by the rotation/tilt of device.</p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 13 -->
+
+            <div class="carousel-item">
+              <div class="totalImagesNumber">14 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (18).jpg" alt="Sketch 18">
+
+              <div class="carousel-caption">
+
+                <h5>Iteration #4: Whack With Voice</h5>
+
+                <p>Use sound input to whack the moles.</p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 14 -->
+
+            <div class="carousel-item">
+              <div class="totalImagesNumber">15 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (19).jpg" alt="Sketch 19">
+
+              <div class="carousel-caption">
+
+                <h5>Iteration #5: Competition!</h5>
+
+                <p>Add a leaderboard to make game more competitive.</p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 15 -->
+
+            <div class="carousel-item">
+              <div class="totalImagesNumber">16 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (20).jpg" alt="Sketch 20">
+
+              <div class="carousel-caption">
+
+                <h5>Iteration #6: Better Control</h5>
+
+                <p>Move the hammer with some on screen controls.</p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 16 -->
+
+            <div class="carousel-item">
+              <div class="totalImagesNumber">16 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (21).jpg" alt="Sketch 21">
+
+              <div class="carousel-caption">
+
+                <h5>Iteration #7: Whac-A-Memory</h5>
+
+                <p>Memory game with moles and
+                  <br />whacking in the same order they appear.</p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 16 -->
+
+            <div class="carousel-item">
+              <div class="totalImagesNumber">16 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (22).jpg" alt="Sketch 22">
+
+              <div class="carousel-caption">
+
+                <h5>Iteration #8: Increase Difficulty</h5>
+
+                <p>Add bombs in the game that take away points if hit.</p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 16 -->
+
+            <div class="carousel-item">
+              <div class="totalImagesNumber">16 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (23).jpg" alt="Sketch 23">
+
+              <div class="carousel-caption">
+
+                <h5>Iteration #9: Flipping The Game!</h5>
+
+                <p>
+                  Almost new idea where instead of playing as the hammer,
+                  <br />you play as the mole that hides!
+                </p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 16 -->
+
+            <div class="carousel-item">
+              <div class="totalImagesNumber">16 / 16</div>
+
+              <img class="d-block w-100" src="../img/WordlessProject/sketches/sketch (24).jpg" alt="Sketch 24">
+
+              <div class="carousel-caption">
+
+                <h5>Iteration #10: Mole Variations</h5>
+
+                <p>Change the mole size, and volume needed to hit it.</p>
+
+              </div>
+
+            </div>
+            <!-- Carousel Item 16 -->
+
+          </div>
+
+          <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+            <span class="sr-only">Previous</span>
+
+          </a>
+          <!-- Carousel Control Prev -->
+
+          <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+            <span class="sr-only">Next</span>
+
+          </a>
+          <!-- Carousel Control Next -->
+
+        </div>
+
+
+      </div>
+      <!-- End of Row -->
+
+    </div>
+
+    <!--slideshow end-->
+    <!-- Video Demonstation Start -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <h1 class="text-center carousel-title">Video Demo</h1>
+          <hr>
+        </div>
+      </div>
+      <div class="videoContainer">
+        <video controls>
+          <source src="../img/WordlessProject/CPSC581_Project1_Demo.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <!-- Video Demonstation End -->
+    <!--<div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <svg
+            class="bd-placeholder-img card-img-top"
+            width="100%"
+            height="0"-->
+    <!--"225"-->
+    <!--xmlns="http://www.w3.org/2000/svg"
+      role="img"
+      aria-label="Placeholder: Thumbnail"
+      preserveAspectRatio="xMidYMid slice"
+      focusable="false"
+    >
+      <title>P0 Placeholder</title>-->
+    <!--<rect width="100%" height="100%" fill="#55595c" />-->
+    <!--<text x="50%" y="50%" fill="#eceeef" dy=".3em">-->
+    <!--<img src="../images/project 0/thumbnail.png" alt="Thumbnail" style="height:225px;">-->
+    <!--</text>-->
+    <!--</svg>
+
+            <div class="card-body">
+              <p class="card-text">
+                The objective of this project was to create a single button that represents my client.
+                  The interaction with the button aims to delight and evoke wonder.
+                  And so, I decided to create a catching game using HTML, CSS, JS, and the P5 framework.
+              </p>
+              <div
+                class="d-flex justify-content-between align-items-center"
+              >
+                <div class="btn-group">
+
+                  <button
+                    id="go-p0"
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    Go
+                  </button>
+                  <button
+                    id="src-p0"
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    Source
+                  </button>
+                  <button
+                    id="det-p0"
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg
+              class="bd-placeholder-img card-img-top"
+              width="100%"
+              height="225"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: Thumbnail"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>P1 Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c" />
+              <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                Thumbnail
+              </text>
+            </svg>
+
+            <div class="card-body">
+              <p class="card-text">
+                Summarize what this project is about. You could talk about major components/features.
+                Visual summary, sketches, captions, and video demonstration should go into Details.
+                Link to project files/documentation in Source.
+              </p>
+              <div
+                class="d-flex justify-content-between align-items-center"
+              >
+                <div class="btn-group">
+                  <button
+                    id="go-p1"
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+
+                  >
+                    Go
+                  </button>
+                  <button
+                    id="src-p1"
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    Source
+                  </button>
+                  <button
+                    id="det-p1"
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg
+              class="bd-placeholder-img card-img-top"
+              width="100%"
+              height="225"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: Thumbnail"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>P2 Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c" />
+              <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                Thumbnail
+              </text>
+            </svg>
+
+            <div class="card-body">
+              <p class="card-text">
+                Summarize what this project is about. You could talk about major components/features.
+                Visual summary, sketches, captions, and video demonstration should go into Details.
+                Link to project files/documentation in Source.
+              </p>
+              <div
+                class="d-flex justify-content-between align-items-center"
+              >
+                <div class="btn-group">
+                  <button
+                    id="go-p2"
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    Go
+                  </button>
+                  <button
+                    id="src-p2"
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    Source
+                  </button>
+                  <button
+                    id="det-p2"
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>-->
+  </div>
+</main>
+
+<!--<footer class="text-muted py-5">
+    <div class="container">
+        <p class="mb-1">Album example is from &copy;Bootstrap.</p>
+    </div>
+</footer>-->
+<!-- Load Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JQuery Plugin -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Bootstrap JQuery Plugin -->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
