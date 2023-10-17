@@ -1,132 +1,103 @@
-@media (max-width: 768px) {
-    .navbar {
+@media screen and (max-width: 768px) {
+    body {
+        /*display: flex;*/
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
+        margin: 0;
     }
 
-    nav .menu {
-        text-align: center;
-    }
-
-    nav .menu a:visited {
-        color: white;
+    /* Navbar */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .menu li {
         margin: 10px 0;
     }
 
-    .header-content {
-        min-width: 100%;
-        background-color: red;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     .header-text {
-        top: 25%;
-        left: 5%;
+        text-align: center;
+        top: 20%;
     }
 
     .header-text .greeting {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .header-text .name {
-        font-size: 50px;
+        font-size: 36px;
     }
 
     .header-text span {
-        font-size: 30px;
-    }
-
-    .angle-down-icon {
-        margin-top: 10px;
-    }
-
-    .angle-down-icon a i {
-        font-size: 20px;
-    }
-
-    .angle-down-icon a span {
-        font-size: 14px;
-    }
-
-    /* Adjust social icons positioning */
-    .social-icons {
-        right: 20px;
-        bottom: 20px;
-    }
-
-    .social-icons a {
-        font-size: 24px;
+        font-size: 22px;
+        margin: 0;
     }
 
     .about-me-container {
-        flex-direction: column; /* Stack content vertically */
-        text-align: center; /* Center-align the content */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .about-me {
-        max-width: 100%;
+    .about-me-left {
+        order: 2;
+        padding: 10px;
     }
 
-    .about-me-left,
-    .about-me-right {
-        width: 100%; /* Full width for each section */
-        text-align: center; /* Center-align the content inside each section */
-        margin: 0; /* Remove margin to center content */
+    .skills-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    /* Modify about-me section */
-    .about-me-title {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-    .about-me-left img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    /* Reduce font size for about-me summary */
-    .about-me-summary {
-        font-size: 16px;
-    }
-
-    /* Modify skill cards layout for mobile */
     .skills-section h2 {
         font-size: 24px;
     }
 
     .skill-cards {
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .skill-card {
-        flex-basis: 100%;
+        width: 100%;
         margin: 10px 0;
     }
 
-    .projects-container .card {
-        max-width: 100%;
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
     }
 
-    .projects-container .card .image {
+    .card {
         width: 100%;
         height: auto;
+    }
+
+    .card .image {
         top: 0;
     }
 
-    .projects-container .card .content {
-        top: -90px;
+    .card .content {
+        top: 0;
+    }
+
+    .connect {
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     .connect ul {
-        font-size: 18px;
+        font-size: 20px;
     }
 
-    .connect li {
-        margin-right: 5px;
-        margin-left: 5px;
+    .copyright {
+        font-size: 12px;
     }
 }
